@@ -32,3 +32,30 @@ let MarvelDC = marvel.concat(DC)
 console.log(marvel);
 
 console.log(MarvelDC)
+
+// spread 
+
+let allHeros = [...marvel,...DC];
+
+console.log(allHeros)
+
+// flat
+
+let complexArray = [1,2,3,4,[3,4,5,6,[4,5,6,7]],4,5,5];
+
+let simpleArray = complexArray.flat(Infinity);
+
+console.log(simpleArray);
+
+// isArray and from
+
+console.log(Array.isArray("Krishna"))
+console.log(Array.from("Krishna"))
+
+// Array.of()
+
+let room1 = 304;
+let room2 = 305;
+let room3 = 306;
+
+console.log(Array.of(room1,room2,room3));
